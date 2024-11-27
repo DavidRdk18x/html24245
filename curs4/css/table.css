@@ -1,0 +1,22 @@
+#tabel1{
+    border: 1px red solid;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border-collapse: collapse;
+}
+#tabel1 tr td, #tabel tr th{
+    border: 1px blue double;
+    padding: 15px;
+}
+#tabel1 tr th{
+    color: red;
+    background-color:rgba(0, 0, 0, 0.707);
+}
+#tabel1 tr:nth-child(2n){
+    background-color: rgb(178, 128, 36);
+}
+#tabel1 tr:nth-child(2n+1){
+    background-color: rgb(28, 94, 94);
+}
+#tabel1 tfoot tr{
+    background-color: blueviolet;
+}
