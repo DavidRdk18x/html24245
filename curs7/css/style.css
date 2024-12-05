@@ -1,0 +1,86 @@
+body{
+    .yuji-mai-regular {
+        font-family: "Yuji Mai", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      ;
+      }
+        
+nav{
+    background-color: rgb(255, 0, 0);
+    height: 36px;
+}
+nav > ul {
+    margin: 0;
+    padding: 0;
+
+}
+nav > ul > li {
+    text-transform: uppercase;
+    /*text-transform: lowercase;*/
+    /*text-transform: capitalize;*/
+    display: inline;
+    float: left;
+    padding: 7px 5px 10px 5px;
+}
+nav > ul > li:hover {
+    background-color: red;
+}
+nav > ul > li.active {
+    background-color: red;
+}
+nav > ul > li.active > a {
+    color: rgb(218, 213, 213);
+text-decoration: none;
+list-style: none;
+padding: 15px 20px;
+}
+nav > ul > li > a:hover {
+    color: black;
+}
+
+/* submeniu */
+ul.submeniu {
+    text-transform: uppercase;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav > ul > li:hover > ul.submeniu {
+    display: block;
+    background-color: red;
+    color: black;
+    clear: both;
+    margin-top: 18px;
+    position: absolute;
+    width: 160px;
+} 
+ul.submeniu > li > a {
+    padding:  15px 20px;
+    text-decoration: none;
+    color: black;
+}
+ul.submeniu > li:hover {
+    background-color: red;
+    color: #ffff;
+}
+ul.submeniu > li.hover > ul.subdomeniu > li {
+    padding: 7px 5px 7px 5px;
+}
+ul.submeniu > li.hover > ul.subdomeniu > li > a {
+    padding: 7px 5px 7px 5px;
+    text-decoration: none;
+    color: #ffff;
+
+}
+ul.submeniu > a {
+    padding: 7px 5px 7px 5px;
+    text-decoration: none;
+    color: #ffff;
+}
+main{
+    z-index: 1;
+    position: relative
+}
